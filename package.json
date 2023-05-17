@@ -1,8 +1,16 @@
 {
   "name": "lisk-desktop",
-  "productName": "lisk-desktop",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "author": "Lisk Foundation <admin@lisk.com>, lightcurve GmbH <admin@lightcurve.io>",
+  "license": "GPL-3.0",
+  "productName": "Lisk",
+  "description": "Lisk",
+  "homepage": "https://github.com/LiskHQ/lisk-desktop",
+  "bugs": "https://github.com/LiskHQ/lisk-desktop/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LiskHQ/lisk-desktop"
+  },
   "main": ".vite/build/main.js",
   "scripts": {
     "start": "electron-forge start",
@@ -12,11 +20,6 @@
     "lint": "echo \"No linting configured\""
   },
   "keywords": [],
-  "author": {
-    "name": "Ali Haghighatkhah",
-    "email": "ali@lightcurve.io"
-  },
-  "license": "MIT",
   "devDependencies": {
     "@electron-forge/cli": "^6.1.1",
     "@electron-forge/maker-deb": "^6.1.1",
