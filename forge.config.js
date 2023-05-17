@@ -1,6 +1,15 @@
 module.exports = {
-  packagerConfig: {},
   rebuildConfig: {},
+  packagerConfig: {
+    osxSign: {
+      optionsforfile: (filePath) => {
+        return {
+          entitlements: 'config/entitlements.plist'
+        };
+      },
+    },
+    icon: 'config/icon',
+  },
   publishers: [{
     name: '@electron-forge/publisher-github',
     config: {
@@ -8,7 +17,7 @@ module.exports = {
         owner: 'reyraa',
         name: 'lisk-desktop'
       },
-      prerelease: true
+      prerelease: false
     }
   }],
   makers: [{
